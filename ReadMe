@@ -1,0 +1,14 @@
+
+mkdir -p aslmiw_llmbias/
+
+
+pip install -r requirements.txt
+
+
+cd ASLMIW-LLMBias
+python main.py --mode demo --samples 500 --epochs 3
+
+python main.py --mode train --samples 1000 --epochs 10
+
+
+python main.py --mode predict --samples 200
